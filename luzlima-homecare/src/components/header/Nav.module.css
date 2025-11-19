@@ -1,0 +1,197 @@
+.nav {
+
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    z-index: 20;
+    box-shadow: none;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
+
+    
+
+    & a {
+        color: #000;
+        text-decoration: none;
+        font-size: 1.4em;
+        transition: 1s all;
+    }
+
+    & a:hover {
+        color: #319466;
+        transition: .3s all;
+    }
+
+    & .logo {
+        width: 90px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    & .botaoContato {
+        padding: 15px 33px 15px 33px;
+        border-radius: 10px;
+        background-color: #00824E;
+        transition: transform 0.3s ease;
+
+        & a {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+
+    & .botaoContato:hover {
+        transform: scale(1.1);
+    }
+
+    & .botaoContatoMobile {
+        display: none;
+    }
+
+}
+
+.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -4px #000000; 
+    padding: 8px 0; 
+
+    & a {
+        color: #000000;
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #000000;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.aberto .bar:nth-child(1) {
+    transform: translateY(0.7rem) translateX(0.2rem) rotate(45deg);
+}
+
+.aberto .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.aberto .bar:nth-child(3) {
+    transform: translateY(-0.9rem) translateX(0.2rem) rotate(-45deg);
+}
+
+.menuNav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 5%;
+}
+
+
+@media (max-width: 1220px) {
+
+    .nav {
+        padding: 5px 0;
+        justify-content: space-between;
+
+        & .logo {
+            width: 40px;
+            padding: 0px 0px 0px 30px;
+            
+        }
+
+        & a {
+            display: none;
+        }
+
+        
+        & .botaoContato {
+            display: none;
+        }
+    }
+
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        right: 2rem;
+        z-index: 22;
+    }
+
+
+    .menuNav {
+        display: flex;
+        flex-direction: column;
+        gap: 0; 
+        position: fixed;
+        top: 0;
+        right: 0; 
+        padding: 0px 20px 20px 20px;
+        width: 80%; 
+        max-width: 300px; 
+        background-color: #ffffff; 
+        transition: transform 0.3s ease-in-out;
+        margin-right: 0;
+        box-shadow: 0 4px 6px -4px #000000;
+        transform: translateX(100%); 
+        z-index: 21; 
+
+
+        & a {
+        display: block;
+        color: #000000;
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        width: 100%; 
+        text-align: center; 
+        }
+
+
+        & .botaoContatoMobile {
+        display: block;
+        border: none;
+        text-align: center;
+        align-items: center;
+        padding: 4px 10px 4px 10px;
+        border-radius: 10px;
+        background-color: #00824E;
+
+
+        & a {
+            color: #fff;
+        }
+        }
+    }
+
+    .menuAberto {
+        transform: translateX(0);
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        & .logo {
+            width: 40px;
+        }
+    }
+    
+}
