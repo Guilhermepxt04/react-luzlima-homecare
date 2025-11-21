@@ -1,0 +1,73 @@
+.card {
+    flex: 0 0 auto;
+    width: 320px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    scroll-snap-align: center;
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease;
+
+    & .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 15px;
+
+        & .info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            & .foto {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid #eee;
+            }
+
+            & div {
+                & h3 {
+                    font-family: 'Signika', sans-serif;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: #000;
+                    margin: 0;
+
+                    & .data {
+                        font-size: 0.8rem;
+                        color: #777;
+                    }
+                }
+            }
+        }
+    }
+
+    & .estrelas {
+        display: flex;
+        gap: 3px;
+        color: #FFD700;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    & .texto {
+        color: #555;
+        line-height: 1.6;
+        font-size: 0.95rem;
+        font-style: italic;
+    }
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 130, 78, 0.15);
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 280px;
+    }
+}

@@ -1,0 +1,147 @@
+.footer {
+    background-color: #003d25;
+    color: #fff;
+    padding-top: 60px;
+
+
+    & .conteudo {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        & .coluna {
+
+            flex: 1;
+            min-width: 220px;
+
+            & .logoNome {
+                display: flex;
+                flex-direction: row;
+            }
+
+            & .logo {
+                width: 80px;
+                margin-bottom: 20px;
+                filter: brightness(0) invert(1);
+            }
+
+            & .texto {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                color: #ccc;
+                max-width: 300px;
+            }
+
+            & h3 {
+                font-family: 'Signika', sans-serif;
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+                color: #0FBA6B;
+            }
+
+            & .links {
+                list-style: none;
+
+                & li {
+                    margin-bottom: 12px;
+
+                    & a {
+                        color: #ccc;
+                        text-decoration: none;
+                        transition: color 0.3s;
+                        font-size: 1rem;
+                    }
+
+                    & a:hover {
+                        color: #0FBA6B;
+                        padding-left: 5px;
+                    }
+
+                }
+
+            }
+
+            & .contatos {
+                list-style: none;
+
+                & li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 15px;
+                    color: #ccc;
+
+                    & a {
+                        color: #ccc;
+                        text-decoration: none;
+                        transition: color 0.3s;
+                    }
+
+                    & a:hover {
+                        color: #0FBA6B;
+                    }
+
+                    & .icones {
+                        color: #0FBA6B;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    * .copyright {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.85rem;
+        color: #888;
+        background-color: #002e1c;
+
+        & p {
+            margin: 5px 0;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        &  .conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+
+        & .coluna {
+            align-items: center;
+        display: flex;
+        flex-direction: column;
+
+            & .texto {
+                margin: 0 auto;
+            }
+
+            & .contatos {
+
+                & li {
+                    justify-content: center;
+                }
+
+            }
+
+            & .links {
+                padding-left: 0;
+            }   
+        }   
+    }
+    }
+}

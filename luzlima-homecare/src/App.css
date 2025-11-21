@@ -12,11 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
 main {
     width: 100%;
     margin: auto;
@@ -25,9 +20,7 @@ main {
 }
 
 img {
-    border-radius: 20px;
     transition: .3s all;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     will-change: transform;
 }
 
@@ -41,4 +34,12 @@ h1,h2,h3 {
 
 p,a {
     font-family: Rubik;
+}
+
+
+.asw-menu-btn { 
+    left: auto !important;
+    right: 20px !important; 
+    bottom: 20px !important; 
+    z-index: 9999 !important; 
 }

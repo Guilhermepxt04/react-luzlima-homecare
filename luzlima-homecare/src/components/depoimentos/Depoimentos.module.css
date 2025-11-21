@@ -1,0 +1,121 @@
+.depoimentos {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    font-family: 'Rubik', sans-serif;
+
+    & .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .titulo {
+            text-align: center;
+            margin-bottom: 50px;
+
+            & h2 {
+                font-family: 'Signika', sans-serif;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #00824E;
+                margin-bottom: 10px;
+            }
+        }
+
+        & .carrossel {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            & .conteudo {
+                display: flex;
+                gap: 25px;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                padding: 20px 5px;
+                width: 100%;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            & .conteudo::-webkit-scrollbar {
+                display: none;
+            }
+
+            & .navButton {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #fff;
+                border: 1px solid #eee;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 10;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                color: #003d25;
+                font-size: 1.2rem;
+                transition: all 0.3s ease;
+            }
+
+            & .navButton:hover {
+                background-color: #00824E;
+                color: #fff;
+                border-color: #00824E;
+            }
+
+            & .esquerda {
+                left: -20px;
+            }
+
+            & .direita {
+                right: -20px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .depoimentos {
+
+        & .container {
+
+            justify-content: flex-start;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            & .titulo {
+
+                & h2 {
+                    font-size: 2rem;
+                }
+            }
+
+            & .carrossel {
+
+                & .navButton {
+                    display: none;
+                }
+
+                & .conteudo {
+
+                    width: 100vw;
+                    margin-left: -20px;
+
+                }
+
+            }
+        }
+    }
+}

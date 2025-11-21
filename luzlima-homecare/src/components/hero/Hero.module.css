@@ -87,13 +87,9 @@
 @media (max-width: 768px) {
     .hero {
         padding: 90px 5% 20px 5%;
-        /* Mais padding na vertical, menos na horizontal */
         justify-content: center;
-        /* Centraliza o conteúdo horizontalmente no mobile */
         align-items: flex-start;
-        /* Mantém o alinhamento do texto à esquerda */
         text-align: left;
-        /* Alinha o texto */
 
         & .conteudo {
             max-width: 90%;
