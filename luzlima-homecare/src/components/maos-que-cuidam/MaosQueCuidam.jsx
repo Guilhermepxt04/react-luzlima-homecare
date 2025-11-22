@@ -47,6 +47,7 @@ export default function MaosQueCuidam() {
                     src={img} 
                     alt="imagem de uma enfermeira ajoelhada na frente de uma mulher dando um copo de água" 
                     variants={itemVariants} 
+                    loading="lazy"
                 />
                 
 

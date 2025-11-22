@@ -13,7 +13,7 @@ export default function EquipeProps({ cargo, texto, imagem, variants }) {
             }}
         >
             <div className={style.imgWrapper}>
-                <img src={imagem} alt={`Foto de ${cargo}`} />
+                <img src={imagem} alt={`Foto de ${cargo}`} loading="lazy"/>
                 <div className={style.cargoOverlay}>
                     <h3>{cargo}</h3>
                 </div>

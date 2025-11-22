@@ -1,15 +1,17 @@
+import { Suspense, lazy } from 'react';
 import './App.css'
 import Whatsapp from './components/whatsapp/Whatsapp.jsx'
 import Nav from './components/header/Nav.jsx'
 import Hero from './components/hero/Hero.jsx'
-import Beneficios from './components/beneficios/beneficios.jsx'
-import MaosQueCuidam from './components/maos-que-cuidam/MaosQueCuidam.jsx'
-import Servicos from './components/servicos/Servicos.jsx'
-import Equipe from './components/equipe/Equipe.jsx'
-import OndeEstamos from './components/onde-estamos/OndeEstamos.jsx'
-import Cta from './components/cta/Cta.jsx'
 import Footer from './components/footer/Footer.jsx'
-import Depoimentos from './components/depoimentos/Depoimentos.jsx'
+const Beneficios = lazy(() => import('./components/beneficios/Beneficios.jsx'));
+const MaosQueCuidam = lazy(() => import('./components/maos-que-cuidam/MaosQueCuidam.jsx'));
+const Servicos = lazy(() => import('./components/servicos/Servicos.jsx'));
+const Equipe = lazy(() => import('./components/equipe/Equipe.jsx'));
+const OndeEstamos = lazy(() => import('./components/onde-estamos/OndeEstamos.jsx'));
+const Depoimentos = lazy(() => import('./components/depoimentos/Depoimentos.jsx'));
+const Cta = lazy(() => import('./components/cta/Cta.jsx'));
+
 
 export default function App() {
 
@@ -22,13 +24,16 @@ export default function App() {
 
     <main>
       <Hero />
-      <Beneficios />
-      <MaosQueCuidam />
-      <Servicos />
-      <Equipe />
-      <OndeEstamos />
-      <Depoimentos />
-      <Cta />
+
+      <Suspense fallback={<div style={{textAlign: 'center', padding: '50px'}}>Carregando...</div>}>
+        <Beneficios />
+        <MaosQueCuidam />
+        <Servicos />
+        <Equipe />
+        <OndeEstamos />
+        <Depoimentos />
+        <Cta />
+      </Suspense>
     </main>
 
     <footer>

@@ -62,7 +62,7 @@ export default function Servicos() {
                     <motion.h2 
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ once: true, duration: 0.5 }}
                     >
                         Nossos Serviços
                     </motion.h2>
@@ -98,7 +98,7 @@ export default function Servicos() {
                         className={styles.imgCentral}
                         variants={imageVariants}
                     >
-                        <img src={img1} alt="Enfermeira cuidando de uma senhora idosa" />
+                        <img src={img1} alt="Enfermeira cuidando de uma senhora idosa" loading="lazy"/>
                     </motion.div>
 
                     <div className={styles.colDireita}>
@@ -120,7 +120,7 @@ export default function Servicos() {
                     className={styles.cta}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4, duration: 0.5 }}
+                    transition={{once:true, delay: 0.4, duration: 0.5 }}
                 >
                     <h3>Sua família merece atenção 24 horas</h3>
                     <button>

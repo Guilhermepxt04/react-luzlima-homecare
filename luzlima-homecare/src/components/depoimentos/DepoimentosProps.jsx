@@ -16,7 +16,7 @@ export default function DepoimentosProps({ foto, nome, data, estrelas = 5, texto
             <div className={styles.cardHeader}>
                 <div className={styles.info}>
 
-                    <img src={foto} alt={nome} className={styles.foto} />
+                    <img src={foto} alt={nome} className={styles.foto} loading="lazy"/>
 
                     <div>
                         <h3>{nome}</h3>
