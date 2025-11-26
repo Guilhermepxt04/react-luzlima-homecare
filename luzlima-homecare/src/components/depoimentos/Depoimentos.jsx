@@ -2,7 +2,14 @@ import styles from './Depoimentos.module.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useRef } from 'react';
 import DepoimentosProps from './DepoimentosProps';
-import fotoCliente1 from '../../assets/img/enfermeira.png';
+import fotoCliente1 from '../../assets/img/maria-regina.jpg';
+import fotoCliente2 from '../../assets/img/carlos-andrade.jpg'
+import fotoCliente3 from '../../assets/img/fernanda-souza.jpg'
+import fotoCliente4 from '../../assets/img/roberto-lima.jpg'
+import fotoCliente5 from '../../assets/img/juliana-martins.jpg'
+import fotoCliente6 from '../../assets/img/pedro-henrique.jpg'
+import fotoCliente7 from '../../assets/img/ana-clara.jpg'
+import fotoCliente8 from '../../assets/img/ricardo-gomes.jpg'
 import { motion } from 'framer-motion';
 
 
@@ -72,7 +79,7 @@ export default function Depoimentos() {
                     >
                         <DepoimentosProps 
                             foto={fotoCliente1}
-                            nome="Maria de Lourdes"
+                            nome="Maria Regina"
                             data="2 semanas atrás"
                             estrelas={5}
                             texto="A equipe da Luz & Lima foi um anjo na vida da minha mãe. O cuidado e o carinho das enfermeiras são incomparáveis. Recomendo de olhos fechados!"
@@ -80,7 +87,7 @@ export default function Depoimentos() {
                         />
 
                         <DepoimentosProps 
-                            foto={fotoCliente1}
+                            foto={fotoCliente2}
                             nome="Carlos Andrade"
                             data="1 mês atrás"
                             estrelas={5}
@@ -89,7 +96,7 @@ export default function Depoimentos() {
                         />
 
                         <DepoimentosProps 
-                            foto={fotoCliente1}
+                            foto={fotoCliente3}
                             nome="Fernanda Souza"
                             data="3 semanas atrás"
                             estrelas={5}
@@ -98,7 +105,7 @@ export default function Depoimentos() {
                         />
 
                         <DepoimentosProps 
-                            foto={fotoCliente1}
+                            foto={fotoCliente4}
                             nome="Roberto Lima"
                             data="2 meses atrás"
                             estrelas={5}
@@ -107,7 +114,7 @@ export default function Depoimentos() {
                         />
 
                         <DepoimentosProps 
-                            foto={fotoCliente1}
+                            foto={fotoCliente5}
                             nome="Juliana Martins"
                             data="5 dias atrás"
                             estrelas={5}
@@ -116,7 +123,7 @@ export default function Depoimentos() {
                         />
 
                         <DepoimentosProps 
-                            foto={fotoCliente1}
+                            foto={fotoCliente6}
                             nome="Pedro Henrique"
                             data="1 semana atrás"
                             estrelas={5}
@@ -125,7 +132,7 @@ export default function Depoimentos() {
                         />
 
                         <DepoimentosProps 
-                            foto={fotoCliente1}
+                            foto={fotoCliente7}
                             nome="Ana Clara"
                             data="3 meses atrás"
                             estrelas={5}
@@ -134,7 +141,7 @@ export default function Depoimentos() {
                         />
 
                         <DepoimentosProps 
-                            foto={fotoCliente1}
+                            foto={fotoCliente8}
                             nome="Ricardo Gomes"
                             data="4 meses atrás"
                             estrelas={5}

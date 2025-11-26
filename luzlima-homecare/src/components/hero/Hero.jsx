@@ -1,27 +1,27 @@
 import styles from './Hero.module.css';
 import { motion } from 'framer-motion';
 
-// 1. Configuração do Container (Controla o tempo entre os itens)
+
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.2, // Espera um pouquinho antes de começar
-            staggerChildren: 0.3 // Tempo entre cada elemento aparecer
+            delayChildren: 0.2, 
+            staggerChildren: 0.3 
         }
     }
 };
 
-// 2. Configuração dos Itens (O movimento em si)
+
 const itemVariants = {
     hidden: { 
         opacity: 0, 
-        x: -50 // Começa 50px para a esquerda
+        x: -50 
     },
     visible: { 
         opacity: 1, 
-        x: 0, // Vai para a posição original
+        x: 0, 
         transition: { 
             duration: 0.8, 
             ease: "easeOut" 
