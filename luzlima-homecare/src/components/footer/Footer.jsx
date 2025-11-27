@@ -66,11 +66,11 @@ export default function Footer() {
                         <li>
                             <FaWhatsapp className={style.icones} />
                             <a 
-                                href="https://api.whatsapp.com/send?phone=5511953997087" 
+                                href="https://api.whatsapp.com/send?phone=5511943261876&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20home%20care" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                             >
-                                (11) 95399-7087
+                                (11) 94326-1876
                             </a>
                         </li>
                         <li>

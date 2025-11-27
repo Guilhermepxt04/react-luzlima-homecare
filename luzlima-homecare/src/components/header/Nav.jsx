@@ -48,10 +48,10 @@ export default function Header() {
                     <a href="#profissionais" onClick={toggleMenu}> Nossos Profissionais</a>
                     <a href="#ondeEstamos" onClick={toggleMenu}> Onde Estamos</a>
                     <a href="#depoimentos" onClick={toggleMenu}> Depoimentos </a>
-                    <button className={style.botaoContatoMobile}><a href="https://api.whatsapp.com/send?phone=5511953997087&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20home%20care">Contate-nos</a></button>
+                    <button className={style.botaoContatoMobile}><a href="https://api.whatsapp.com/send?phone=5511943261876&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20home%20care" target="_blank">Contate-nos</a></button>
                 </div>
 
-                <button className={style.botaoContato}><a href="https://api.whatsapp.com/send?phone=5511953997087&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20home%20care">Contate-nos</a></button>
+                <button className={style.botaoContato}><a href="https://api.whatsapp.com/send?phone=5511943261876&text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20home%20care" target="_blank">Contate-nos</a></button>
 
 
                 
