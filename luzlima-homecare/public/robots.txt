@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.luzelimahomecare.com.br/sitemap.xml
