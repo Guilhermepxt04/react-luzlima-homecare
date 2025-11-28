@@ -1,6 +1,6 @@
 import style from './MaosQueCuidam.module.css'
 import img from '../../assets/img/maos-que-cuidam.png'
-import TopicoProps from './topicoProps'
+import TopicoProps from './TopicoProps'
 import { motion } from "framer-motion";
 
 const containerVariants = {
